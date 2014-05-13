@@ -6,7 +6,7 @@ Provides tasks to log deployment markers to redis. See [kibana docs](http://www.
 
 ```['start-deployment', 'end-deployment']```
 
-Currently only supports logging to redis. The `type` option will be used as `_type` to strongly-type the log messages.
+Currently only supports logging to redis. The `type` option is provided so that you can strongly-type the log messages.
 
 ```js
 grunt.initConfig({
@@ -39,7 +39,7 @@ Sample message output (based on above configuration)
 
 ```json
 {
-  "_type": "myproject-deployment-message",
+  "type": "myproject-deployment-message",
   "action": "start-deploy",
   "message":"starting deployment of version 1.2.3",
   "timestamp": 1399997783542,
@@ -47,7 +47,7 @@ Sample message output (based on above configuration)
 },
 
 {
-  "_type": "myproject-deployment-message",
+  "type": "myproject-deployment-message",
   "action": "end-deploy",
   "message":"finished deployment of version 1.2.3",
   "timestamp": 1399997783542,

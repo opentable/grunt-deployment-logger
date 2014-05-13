@@ -4,7 +4,7 @@ var redis = require('redis'),
 module.exports = function(grunt){
     var buildMessage = function(options, action){
         return {
-            _type: options.type,
+            type: options.type,
             action: action,
             message: options.message,
             timestamp: Date.now(),
