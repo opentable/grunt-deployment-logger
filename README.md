@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/opentable/grunt-deployment-logger.png?branch=master)](https://travis-ci.org/opentable/grunt-deployment-logger) [![NPM version](https://badge.fury.io/js/grunt-deployment-logger.png)](http://badge.fury.io/js/grunt-deployment-logger) ![Dependencies](https://david-dm.org/opentable/grunt-deployment-logger.png)
 
-Provides tasks to log deployment markers to redis.
+Provides tasks to log deployment markers to redis. See [kibana docs](http://www.elasticsearch.org/blog/whats-cooking-kibana/) for more info.
 
 ```['start-deployment', 'end-deployment']```
 
