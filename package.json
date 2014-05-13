@@ -1,0 +1,34 @@
+{
+  "name": "grunt-deployment-logger",
+  "version": "1.0.0",
+  "description": "log deployment events to logstash",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:opentable/grunt-deployment-logger.git"
+  },
+  "keywords": [
+    "grunt",
+    "deployment",
+    "logging",
+    "redis"
+  ],
+  "author": "Andy Royle <ajroyle@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentable/grunt-deployment-logger/issues"
+  },
+  "homepage": "https://github.com/opentable/grunt-deployment-logger",
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "redis": "^0.10.1"
+  }
+}
