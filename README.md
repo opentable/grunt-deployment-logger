@@ -51,7 +51,7 @@ Sample message output (based on above configuration)
   "type": "myproject-deployment-message",
   "action": "end-deploy",
   "message":"finished deployment of version 1.2.3",
-  "timestamp": '2014-08-01T12:31:23.345Z",
+  "timestamp": "2014-08-01T12:31:23.345Z",
   "host": "my.machine.name.local"
 }
 ```
