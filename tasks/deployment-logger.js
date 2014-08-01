@@ -7,7 +7,7 @@ module.exports = function(grunt){
             type: options.type,
             action: action,
             message: options.message,
-            timestamp: Date.now(),
+            timestamp: options.timestamp || Date.now(),
             host: os.hostname()
         };
     };

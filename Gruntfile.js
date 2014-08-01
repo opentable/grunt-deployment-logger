@@ -17,11 +17,23 @@ module.exports = function(grunt) {
                 options:{
                     message: 'blarg'
                 }
+            },
+            'test-timestamp-override': {
+                options:{
+                    timestamp: new Date().toISOString(),
+                    message: 'blarg'
+                }
             }
         },
         'end-deployment': {
             'test': {
                 options:{
+                    message: 'flarg'
+                }
+            },
+            'test-timestamp-override': {
+                options:{
+                    timestamp: new Date().toISOString(),
                     message: 'flarg'
                 }
             }
