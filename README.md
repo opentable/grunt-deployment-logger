@@ -28,7 +28,8 @@ grunt.initConfig({
           port: 6379,
           list: 'logstash',
           type: 'myproject-deployment-message',
-          message: 'finished deployment of version 1.2.3'
+          message: 'finished deployment of version 1.2.3',
+          timestamp: new Date().toISOString() // default timestamp is unix milliseconds, you can override it if you want ISO or something else
         }
       }
     }
@@ -50,7 +51,7 @@ Sample message output (based on above configuration)
   "type": "myproject-deployment-message",
   "action": "end-deploy",
   "message":"finished deployment of version 1.2.3",
-  "timestamp": 1399997783542,
+  "timestamp": '2014-08-01T12:31:23.345Z",
   "host": "my.machine.name.local"
 }
 ```
