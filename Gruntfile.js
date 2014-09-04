@@ -15,7 +15,8 @@ module.exports = function(grunt) {
         'start-deployment': {
             'test': {
                 options:{
-                    message: 'blarg'
+                    message: 'blarg',
+                    env: 'test'
                 }
             },
             'test-timestamp-override': {
@@ -28,7 +29,8 @@ module.exports = function(grunt) {
         'end-deployment': {
             'test': {
                 options:{
-                    message: 'flarg'
+                    message: 'flarg',
+                    env: 'production'
                 }
             },
             'test-timestamp-override': {

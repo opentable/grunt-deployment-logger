@@ -8,7 +8,8 @@ module.exports = function(grunt){
             action: action,
             message: options.message,
             timestamp: options.timestamp || Date.now(),
-            host: os.hostname()
+            host: os.hostname(), 
+            env: options.env
         };
     };
 
@@ -17,7 +18,8 @@ module.exports = function(grunt){
             port: 6379,
             host: '127.0.0.1',
             type: 'deployment-message',
-            list: 'logstash'
+            list: 'logstash',
+            env: null
         });
 
         var client = redis.createClient(options.port, options.host);
