@@ -1,6 +1,6 @@
 {
   "name": "grunt-deployment-logger",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "log deployment events to logstash",
   "main": "Gruntfile.js",
   "directories": {
